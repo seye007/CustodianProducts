@@ -1,0 +1,700 @@
+/*@import url('../vendor/bootstrap/css/bootstrap-rtl.css');*/
+@media (min-width: 1200px) {
+   .container {
+      /*width: 1140px;*/
+   }
+}
+
+.col-lg-1, .col-lg-10,
+.col-lg-11, .col-lg-12,
+.col-lg-2, .col-lg-3,
+.col-lg-4, .col-lg-5,
+.col-lg-6, .col-lg-7,
+.col-lg-8, .col-lg-9,
+.col-md-1, .col-md-10,
+.col-md-11, .col-md-12,
+.col-md-2, .col-md-3,
+.col-md-4, .col-md-5,
+.col-md-6, .col-md-7,
+.col-md-8, .col-md-9,
+.col-sm-1, .col-sm-10,
+.col-sm-11, .col-sm-12,
+.col-sm-2, .col-sm-3,
+.col-sm-4, .col-sm-5,
+.col-sm-6, .col-sm-7,
+.col-sm-8, .col-sm-9,
+.col-xs-1, .col-xs-10,
+.col-xs-11, .col-xs-12,
+.col-xs-2, .col-xs-3,
+.col-xs-4, .col-xs-5,
+.col-xs-6, .col-xs-7,
+.col-xs-8, .col-xs-9 {
+   padding-right: 21px;
+   padding-left: 20px;
+}
+
+body{
+    font-family: calibri;
+}
+
+@media (min-width: 769px){
+    .l-navbar_t-light{
+  background: #a50505; 
+}
+}
+
+@media (max-width: 769px){
+    .l-navbar_t-light{
+  background: #a50505; 
+}
+}
+
+.menuzord-menu > li.active > a, .menuzord-menu > li:hover > a {
+    color: #ffeeb3 !important;
+}
+
+.menuzord-menu > li > a {
+    color: #ffffff;
+}
+
+.card{
+    border-radius: none !important;
+}
+
+.wow-bmp input {
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.wow-bmp, .wow-bmp * {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    text-decoration: none;
+}
+
+.wow-bmp-pos-b {
+    bottom: 20px;
+    left: 50%;
+    margin-left: -24px;
+}
+
+.wow-bmp {
+    margin-bottom:55px;
+    position: fixed;
+    z-index: 1000;
+    width: 47px;
+    height: 47px;
+    font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    z-index: 999999;
+}
+
+.wow-bmp a.color-white, .wow-bmp a.hcolor-white:hover, .wow-bmp input:hover + a.hcolor-white {
+    background: #a42f33;
+}
+
+ .wow-bmp a {
+    position: relative;
+    z-index: 2;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+    transition: background 0.5s;
+    -o-transition: background 0.5s;
+    -ms-transition: background 0.5s;
+    -moz-transition: background 0.5s;
+    -webkit-transition: background 0.5s;
+}
+
+.wow-bmp a.color-black, .wow-bmp a.hcolor-black:hover, .wow-bmp input:hover + a.hcolor-black {
+    background: #686a6c;
+}
+
+.button.button-navy-blue:hover, .button.button-white:hover {
+    background: #a42f33;
+    color: #fff !important;
+    border: 1px solid #a42f33;
+}
+
+.button.button-navy-blue {
+    background: none;
+}
+
+.button.button-navy-blue {
+    border: 2px solid #a42f33;
+    height: 44px;
+    border-radius: 5px;
+    
+}
+.btn-primary.focus, .btn-primary:past, .btn-primary:active, .btn-primary:focus, .btn-primary:checked, .btn-primary:hover, .btn-primary:active:hover, .btn-primary.active:hover, .open > .dropdown-toggle.btn-primary:hover, .btn-primary:active:focus, .btn-primary.active:focus, .open > .dropdown-toggle.btn-primary:focus, .btn-primary:active.focus, .btn-primary.active.focus, .open > .dropdown-toggle.btn-primary.focus {
+    background-color: #898e84;
+    border-color: #b63211;
+}
+
+section.contact.contact-gray{
+    background: #f5f5f5;
+    font-family: 'Signika';
+}
+
+section.contact {
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+}
+
+@media (min-width: 1350px){
+section.contact .center {
+    padding: 75px 0;
+}
+}
+
+
+
+section:not(.image-slogan) {
+    border-bottom: 1px solid #eee;
+}
+
+section.contact .background-icon {
+    position: absolute;
+    font-size: 300px;
+    z-index: -1;
+    opacity: 0.02;
+    -webkit-transform: rotate( 25deg );
+    -moz-transform: rotate( 25deg );
+    transform: rotate( 25deg );
+    top: -50px;
+    right: -20px;
+}
+
+.fa-envelope-o:before {
+    content: "\f003";
+}
+
+section.contact h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #a42f33;
+}
+
+.showme{ 
+display: none;
+}
+
+.showit:hover .showme{
+display : block;
+}
+
+#fixedbutton {
+    position: fixed;
+    top: 120px;
+    right: 10px;
+    z-index: 999;
+    width: 10%;
+}
+
+.menuzord{
+    text-transform:none !important;
+}
+
+.form input{
+ width: 60%;
+ height:45px;
+ border:solid 1px #e3e3e3;
+}
+
+.form input ::hover{
+   border:solid 1px #000000; 
+}
+.space{
+    margin-top: 20px;
+}
+
+.logo-brand img {
+    position: relative;
+    top: -2px;
+    display: inline-block;
+    max-height: 100%;
+    padding: 10px 0px;
+}
+
+.l-navbar-height-medium .c-nav_s-standard > li > a {
+    line-height: 85px;
+}
+
+.card-img-top {
+    margin-bottom: -20px;
+}
+
+.form-bor{
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #ffffff;
+}
+   .form-sha{
+       -webkit-box-shadow: -1px 1px 43px 1px rgba(219,216,219,1);
+       -moz-box-shadow: -1px 1px 43px 1px rgba(219,216,219,1);
+       box-shadow: -1px 1px 43px 1px rgba(219,216,219,1);
+   }
+
+.fontn{
+    color:rgb(146, 1, 1);; 
+    font-family:Helvetica,Arial,sans-serif; 
+    padding-top:30px; 
+    padding-bottom: 30px;
+    font-weight: 800px;
+}
+
+.btn-class{
+    margin-top:30px;
+}
+
+.l-header.l-center-t li.logo-brand-for-center {
+    width: 490px;
+    float: left;
+}
+
+.fotbg{
+    background-color: #4d4d4d;
+    color: white;
+    font-size: 18px;
+}
+
+section.contact.contact-gray {
+    font-family: calibri;
+    
+}
+
+.fw-6 {
+    font-weight: 100 !important;
+}
+
+.footer.footer-minimal a{
+    color: #f5f0f0;
+}
+
+.flofooter{
+    float: right;
+    font-size: 15px;
+    font-weight: 100;
+}
+
+button .fa-phone{
+    font-size: 13px;
+    color: darkred;
+    padding-left: 15px;
+}
+
+.fa-phone:hover{ 
+    color: #ffffff;   
+}
+
+.mml{
+    width: 170px;
+}
+
+.alldate{
+    width: 80%;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.paybu{
+-webkit-box-shadow: -2px 7px 16px -1px rgba(0,0,0,0.10);
+-moz-box-shadow: -2px 7px 16px -1px rgba(0,0,0,0.15);
+box-shadow: -2px 7px 16px -1px rgba(0,0,0,0.15);
+}
+
+.to-1{
+    font-weight:800;
+    font-size: 25px;
+    padding: 25px;
+}
+.wod{
+  color: #9C1C1F;
+  padding-bottom: 20px;
+}
+
+.main-radius{
+padding-right:10px;
+border-radius: 20px
+}
+
+.hpadding {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.
+
+
+
+
+{
+    position: relative;
+    display: block;
+    height: 32px;
+    line-height: 32px;
+    padding: 0 10px;
+    font-size: 14px;
+    color: #111111;
+    background-color: #eeeef0;
+    text-decoration: none!important;
+}
+/** Awwal and Qosim Changes **/
+.formtop-width {
+    width: 100% !important;
+}
+.section-primary {
+    padding: 20px 0px;
+}
+.info {
+    background-color: #5f6162;
+    padding: 30px;
+    color: #ffffff;
+    font-size: 118%;
+}
+.info h2 {
+    color: #ffffff;
+}
+a.disable {
+      pointer-events: none;
+      cursor: default;
+}
+.radioStyle {
+    padding: 20px;
+}
+.checkbox-style {
+    padding: 0px 20px;
+}
+/* @toggle switch elements 
+-------------------------------------------------- */
+.switch {
+   font-size: 14px;
+}
+.checkbox, .switch > label {
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -khtml-user-select: none;
+   -moz-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+.switch {
+   cursor: pointer;
+   position: relative;
+   padding-right: 10px;
+   display: inline-block;
+   margin-bottom: 5px;
+   height: 26px;
+}
+.switch > .switch-label {
+   cursor: pointer;
+   display: inline-block;
+   position: relative;
+   height: 25px;
+   width: 58px;
+   color: #fff;
+   font-size: 10px;
+   font-weight: 400;
+   line-height: 20px;
+   text-align: center;
+   background: #D7D7D7;
+   border: 2px solid #D7D7D7;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   -webkit-transition: 0.3s ease-out;
+   -moz-transition: 0.3s ease-out;
+   -o-transition: 0.3s ease-out;
+   transition: 0.3s ease-out;
+   border-radius: 50px;
+}
+.switch > .switch-label + span {
+   display: inline-block;
+   padding-left: 5px;
+   position: relative;
+   top: -7px;
+}
+
+.switch > .switch-label:before {
+   content: attr(data-off);
+   position: absolute;
+   top: 1px;
+   right: 3px;
+   width: 33px;
+}
+
+.switch > .switch-label:after {
+   content: "";
+   margin: 1px;
+   width: 19px;
+   height: 19px;
+   display: block;
+   background: #fff;
+   border-radius: 50px;
+}
+
+.switch > input {
+   -webkit-appearance: none;
+   position: absolute;
+   width: inherit;
+   height: inherit;
+   opacity: 0;
+   left: 0;
+   top: 0;
+}
+
+/* @toggle switch focus state 
+-------------------------------------------------------------- */
+.switch > input:focus {
+   outline: none;
+}
+
+.switch > input:focus + .switch-label {
+   color: #fff;
+   border-color: #C7C7C7;
+   background: #C7C7C7;
+}
+.switch > input:focus + .switch-label:after {
+   background: #fff;
+}
+
+/* @toggle switch normal state 
+--------------------------------------------------------------- */
+.switch > input:checked + .switch-label {
+   border-color: #a50505;
+   background: #a50505;
+   padding-left: 33px;
+   color: white;
+   border-radius: 50px;
+}
+
+.switch > input:checked + .switch-label:before {
+   content: attr(data-on);
+   left: 1px;
+   top: 1px;
+}
+
+.switch > input:checked + .switch-label:after {
+   margin: 1px;
+   width: 19px;
+   height: 19px;
+   background: white;
+   border-radius: 50px;
+}
+
+/* @toggle switch normal state focus 
+--------------------------------------------------------------------------------- */
+.switch > input:checked:focus + .switch-label {
+   background: #a50505;
+   border-color: #a50505;
+}
+
+.switch-round > .switch-label {
+   -webkit-border-radius: 13px;
+   -moz-border-radius: 13px;
+   -o-border-radius: 13px;
+   border-radius: 13px;
+}
+
+.switch-round > .switch-label + span {
+   top: -5px;
+}
+
+.switch-round > .switch-label:before {
+   width: 33px;
+}
+
+.switch-round > .switch-label:after {
+   width: 19px;
+   height: 19px;
+   color: #D7D7D7;
+   content: "\2022";
+   font: 30px/20px Times, Serif;
+   -webkit-border-radius: 20px;
+   -moz-border-radius: 20px;
+   -o-border-radius: 20px;
+   border-radius: 20px;
+}
+
+.switch-round > input:checked + .switch-label {
+   padding-left: 33px;
+}
+
+.switch-round > input:checked + .switch-label:after {
+   color: #a50505;
+}
+.switch-pad {
+    padding-top: 10px;
+}
+
+input:checked + .checkbox, input:checked + .radio {
+    border: 3px solid #a50505;
+}
+.checkbox, .radio {
+    position: relative;
+    margin-right: 4px;
+    background: #fff;
+    display: inline-block;
+    border: 3px solid #a50505;
+    margin-bottom: 0;
+    margin-top: 0;
+    height: 21px;
+    width: 21px;
+    top: 5px;
+}
+.checkbox:before {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 5px;
+    height: 3px;
+    border: solid #a50505;
+    -webkit-border-width: 0 0 3px 3px;
+    -moz-border-width: 0 0 3px 3px;
+    border-width: 0 0 3px 3px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.checkbox:before, .radio:before {
+    content: '';
+    display: none;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -o-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 0;
+    margin: 0;
+}
+.checkbox:before, .radio:before {
+    content: '';
+    display: none;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -o-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 0;
+    margin: 0;
+}
+/* @radio + checkbox option elements 
+----------------------------------------------------- */
+.option {
+   position: relative;
+   padding-right: 15px;
+   display: inline-block;
+   vertical-align: middle;
+}
+
+.option:hover {
+   cursor:pointer;
+}
+
+.option > input {
+   position: absolute;
+   height: inherit;
+   width: inherit;
+   opacity: 0;
+   left: 0;
+}
+.checkbox,
+.radio {
+   position: relative;
+   margin-right: 4px;
+   background: #fff;
+   display: inline-block;
+   border: 3px solid #e2e2e2;
+   margin-bottom: 0;
+   margin-top: 0;
+   height: 21px;
+   width: 21px;
+   top: 5px;
+}
+.checkbox:before,
+.radio:before {
+   content: '';
+   display: none;
+   -webkit-box-sizing: content-box;
+   -moz-box-sizing: content-box;
+   -o-box-sizing: content-box;
+   box-sizing: content-box;
+   padding: 0;
+   margin: 0;
+}
+
+input:checked + .checkbox:before,
+input:checked + .radio:before {
+   display: block;
+}
+.stepwizard-step a.btn-active:active, .stepwizard-step  a:focus, .stepwizard-step .btn-active a:focus, .stepwizard-step a:active {
+    background-color: #a50505;
+    color: #fff !important;
+}
+.stepwizard-step .bg-primary, .stepwizard-step .btn-primary a:focus, .stepwizard-step .btn-primary, .stepwizard-step .label-primary, .stepwizard-step .main-color .xsocial-icons a:hover {
+    background-color: #a50505;
+    color: #fff;
+}
+input:hover{
+border:solid 1px #a50505;
+
+}
+.backcolor{
+background-color: rgba(225, 225, 225, 0.95);
+border-bottom:1px solid #d2d2d2;
+vertical-align: bottom;
+
+
+}
+.bordered{
+border:1px solid #d2d2d2;
+
+}
+.color1{
+background-color:#a50505;
+}
+.pady{
+padding-bottom:10px;
+}
+.whoweare{
+background-color:#f5f4f4;
+padding:20px;
+border-radius:5px;
+}
+.hlife{
+color:#a50505;
+}
+/** Awwal and Qosim Changes ends **/
+/** Tech-V  **/
+.info {
+    background-color: #a50505;
+    padding: 30px;
+    color: #ffffff;
+    font-size: 118%;
+}
+.line-width {
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 33.333333%;
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 43.333333%;
+    max-width: 43.333333%;
+     margin-left: 29.333333%;
+}
+.m20 {
+    margin-top: 20px;
+}
+.page {
+	overflow-x: hidden;
+}

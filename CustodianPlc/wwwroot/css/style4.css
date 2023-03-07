@@ -1,0 +1,310 @@
+
+
+
+
+
+
+
+
+/*
+Theme Name: Custodian and Allied Plc.
+Theme URI: https://custodianplc.com.ng/
+Author: TechVautls Limited
+Author URI: http://techvaults.com/
+Text Domain: Adams
+Description: Custodian and Allied Insurance official website
+Version: 1.2
+Tags: right-sidebar, featured-images, translation-ready
+License: GNU General Public License version 3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+*/
+
+/**
+ *
+ * Table of Content
+ * -----------------------------------------------------------------------------
+ *
+ * 1. Global
+ * 2. Center
+ * 3. Loader
+ * 4. Shortcodes
+ *
+ *    4.1 Progress bars
+ *    4.2 Insurance params
+ *    4.3 Documents
+ *    4.4 Alerts
+ *    4.5 Timeline
+ *    4.6 Menu list
+ *
+ * 5. Form
+ * 6. Button
+ * 7. Header
+ * 8. Sections
+ *
+ *    8.1 Heading
+ *    8.2 Call to action
+ *    8.3 Insurances slider
+ *    8.4 Tabs
+ *    8.5 Blog
+ *    8.6 Slogan
+ *    8.7 References
+ *    8.8 Box with image on right side
+ *    8.9 Box with image on left side
+ *    8.10 Agents
+ *    8.11 Image slogan
+ *    8.12 Contact
+ *    8.13 Contact full
+ *    8.14 Double content
+ *    8.15 Full-width content
+ *
+ * 9. Footer
+ * 10. Contact popup
+ * 11. Quote popup
+ *
+ */
+
+/**
+ *
+ * 1. Global
+ * -----------------------------------------------------------------------------
+ *
+ */
+
+ .circles {
+    /*width: 250px;*/
+    height: 250px;
+    position: relative;
+}
+ .circle-1 {
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    margin-top: -126px;
+    margin-left: -126px;
+    border: 1px solid #f5f5f5;
+}
+.circle-2 {
+    width: 200px;
+    height: 200px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    border: 1px solid #eee;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+    position: absolute;
+}
+
+.circle-3 {
+    width: 145px;
+    height: 145px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    border: 1px solid #e5e5e5;
+    top: 50%;
+    left: 50%;
+    margin-top: -75px;
+    margin-left: -75px;
+    position: absolute;
+}
+
+ .circle-4 {
+    width: 80px;
+    height: 80px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    border: 1px solid #ddd;
+    top: 50%;
+    left: 50%;
+    margin-top: -43px;
+    margin-left: -43px;
+    position: absolute;
+}
+.circle-center {
+    width: 40px;
+    height: 40px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    top: 50%;
+    left: 50%;
+    border: 1px solid #ddd;
+    margin-top: -21px;
+    margin-left: -21px;
+    position: absolute;
+    font-size: 0;
+    text-align: center;
+    -webkit-transition: all 0.2s linear;
+    -moz-transition: all 0.2s linear;
+    transition: all 0.2s linear;
+}
+
+.circle-center i {
+    font-size: 16px;
+    display: block;
+    margin-top: 11px;
+}
+ .circle-center:hover i {
+    color: #fff;
+}
+ .circle-center .circle-center-tip {
+    position: absolute;
+    font-size: 13px;
+    color: #000;
+    width: 200px;
+    padding: 7px 0;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    margin-left: -100px;
+    left: 50%;
+    margin-top: -37px;
+}
+
+ .circle-center .circle-center-tip:after {
+    width: 6px;
+    height: 6px;
+    -webkit-transform: rotate( 45deg );
+    -moz-transform: rotate( 45deg );
+    transform: rotate( 45deg );
+    content: ' ';
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    bottom: -3px;
+}
+
+@-webkit-keyframes pulse {
+    0% { -webkit-transform: scale( 1 ); opacity: 0.3; }
+	  50% { -webkit-transform: scale( 1.1 ); opacity: 1; }
+    100% { -webkit-transform: scale( 1 ); opacity: 0.3; }
+}
+
+@-moz-keyframes pulse {
+    0% { -moz-transform: scale( 1 ); opacity: 0.3; }
+	  50% { -moz-transform: scale( 1.1 ); opacity: 1; }
+    100% { -moz-transform: scale( 1 ); opacity: 0.3; }
+}
+
+@-o-keyframes pulse {
+    0% { -o-transform: scale( 1 ); opacity: 0.3; }
+	  50% { -o-transform: scale( 1.1 ); opacity: 1; }
+    100% { -o-transform: scale( 1 ); opacity: 0.3; }
+}
+
+@keyframes pulse {
+    0% { transform: scale( 1 ); opacity: 0.3; }
+	  50% { transform: scale( 1.1 ); opacity: 1; }
+    100% { transform: scale( 1 ); opacity: 0.3; }
+}
+
+.circle-pulse {
+    -webkit-animation: pulse 2s infinite;
+    -moz-animation: pulse 2s infinite;
+    -o-animation: pulse 2s infinite;
+    animation: pulse 2s infinite;
+  	opacity: 1;
+
+  	-webkit-animation-fill-mode: both;
+  	-moz-animation-fill-mode: both;
+  	-o-animation-fill-mode: both;
+  	animation-fill-mode: both;
+}
+
+@media (min-width: 1350px) {
+
+    section.call-to-action .left {
+        width: 512.5px;
+        float: left;
+    }
+
+    section.call-to-action .right {
+        width: 512.5px;
+        float: right;
+    }
+
+    section.call-to-action .center {
+        padding: 75px 0;
+    }
+
+    section.call-to-action .right .circles {
+        margin: -100px 0;
+    }
+}
+
+@media (min-width: 950px) and (max-width: 1349px) {
+
+    section.call-to-action .left {
+        width: 400px;
+        float: left;
+    }
+
+    section.call-to-action .right {
+        width: 400px;
+        float: right;
+    }
+
+    section.call-to-action .left input[type="text"] {
+        width: 145px;
+    }
+
+    section.call-to-action .center {
+        padding: 50px 0;
+    }
+
+    section.call-to-action .right .circles {
+        margin: -100px 0;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 949px) {
+
+    section.call-to-action .center {
+        padding: 50px 0;
+    }
+
+    section.call-to-action .left {
+        background: #fdfdfd;
+        position: relative;
+        z-index: 200;
+    }
+
+    section.call-to-action .right .circles {
+        margin: -75px auto -125px auto;
+    }
+}
+
+@media (max-width: 599px) {
+
+    section.call-to-action .center {
+        padding: 30px 0;
+    }
+
+    section.call-to-action .left {
+        background: #fdfdfd;
+        position: relative;
+        z-index: 200;
+    }
+
+    section.call-to-action .left .form input {
+        margin-bottom: 10px;
+        width: -webkit-calc( 100% - 52px );
+        width: -moz-calc( 100% - 52px );
+        width: calc( 100% - 52px );
+    }
+
+    section.call-to-action .right .circles {
+        left: 50%;
+        margin: -75px 0 -125px -225px;
+    }
+}
+

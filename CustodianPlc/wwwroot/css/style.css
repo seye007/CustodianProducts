@@ -1,0 +1,125 @@
+/* Add your custom styles here */
+
+/* Global styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #fff;
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.navbar-brand {
+  color: #A50505;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.nav-link {
+  color: #A50505;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5);
+  opacity: 0.8;
+  z-index: -1;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 2em;
+  text-align: center;
+}
+/* Jumbotron styles */
+.jumbotron {
+  background-image: url("img/header-bg.jpg");
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+  .jumbotron h1 {
+    font-size: 5rem;
+  }
+
+  .jumbotron p {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+  }
+
+/* Card styles */
+.card {
+  border: none;
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.card-text {
+  font-size: 1.2rem;
+}
+
+.btn-outline-danger {
+  border-color: #A50505;
+  color: #A50505;
+}
+
+  .btn-outline-danger:hover {
+    background-color: #A50505;
+    color: #fff;
+  }
+
+/* Footer styles */
+footer {
+  background-color: #A50505;
+  color: #fff;
+  padding: 2rem 0;
+}
+
+.footer-logo {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.footer-text {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+  .footer-link:hover {
+    text-decoration: underline;
+  }

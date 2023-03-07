@@ -1,0 +1,303 @@
+﻿ @model PersonalVm
+ <div class="smart-forms">
+    <div class="frm-row">
+
+      <div class="colm colm4">
+        <div class="section">
+          <label for="title" class="field-label">Title</label>
+          <label class="field select">
+            <select id="title" name="title" asp-for="Title">
+              <option selected value="">Title</option>
+              <option value="Miss">Miss</option>
+              <option value="Master">Master</option>
+              <option value="Mr">Mr</option>
+              <option value="Mrs">Mrs</option>
+              <option value="Dr">Dr</option>
+              <option value="Prof">Prof</option>
+              <option value="Chief">Chief</option>
+              <option value="Alhaji">Alhaji</option>
+              <option value="Pastor">Pastor</option>
+              <option value="Rev.">Rev.</option>
+            </select>
+            <span asp-validation-for="Title" ></span>
+            <i class="arrow double"></i>                    
+          </label>  
+        </div>
+      </div>
+
+      <div class="colm colm4">
+        <div class="section">
+          <label for="fullname" class="field-label">Surname</label>
+          <label class="field">
+            <input
+              type="text"
+              name="surname"
+              asp-for="Surname"
+              id="surname"
+              value=""
+              class="gui-input"
+              placeholder="Surname"
+            >
+          </label>
+        </div>
+      </div>
+
+      <div class="colm colm4">
+        <div class="section">
+          <label for="firstname" class="field-label">First Name</label>
+          <label class="field">
+            <input
+              type="text"
+              name="firstname"
+              id="firstname"
+              asp-for="FirstName"
+              value=""
+              class="gui-input"
+              placeholder="firstname"
+            >
+          </label>
+        </div>
+      </div>
+      
+      <div class="colm colm4">
+        <div class="section">
+          <label for="date" class="field-label">Date of Birth</label>
+          <label class="field">
+            
+				<input
+					type="text"
+					name="dateofbirth"
+					id="date_of_birth"
+          asp-for="DateOfBirth"
+					class="gui-input datepicker-here"
+					data-language="en"
+					data-date-format="yyyy-mm-dd"
+					data-min-view="days"
+					data-view="years"
+					readonly="true"
+					value=""
+					placeholder="yyyy-mm-dd"
+				>
+          </label>
+        </div>
+      </div>
+                        
+      <div class="colm colm4">
+        <div class="section">
+          <label for="gender" class="field-label">Gender</label>
+          <label class="field select">
+            <select id="gender" name="gender" asp-for="Gender">
+              <option value="">Select Gender...</option>
+              <option value="Male"> Male</option>
+              <option value="Female">Female</option>
+            </select>
+            <i class="arrow double"></i>                    
+          </label>  
+        </div>
+      </div>
+       
+      <div class="colm colm4">
+        <div class="section">
+          <div class="section">
+            <label for="email" class="field-label">Email</label>
+            <label class="field">
+              <input
+                type="email"
+                name="email"
+                asp-for="Email"
+                value=""
+                id="email"
+                class="gui-input"
+                placeholder="Email"
+              >
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="colm colm4">
+        <div class="section">
+          <label for="phone" class="field-label">Mobile no.</label>
+          <label class="field">
+            <input
+              type="tel"
+              name="telephone"
+              asp-for="TelePhone"
+              id="telephone"
+              maxlength="14"
+              value=""
+              class="gui-input phone_mask"
+              placeholder="Enter Mobile No."
+            >
+          </label>
+        </div>
+      </div>
+
+      <div class="colm colm4">
+        <div class="section">
+          <label for="address" class="field-label">Address</label>
+          <label class="field">
+            <input
+              type="text"
+              id="address"
+              name="address"
+              asp-for="Address"
+              value=""
+              class="gui-input"
+              placeholder="address"
+            >
+          </label>
+        </div>
+      </div>
+
+      <div class="colm colm4">
+        <div class="section">
+          <label for="state" class="field-label">State</label>
+          <label class="field select">
+            <select name="state" id="state" asp-for="State" type="text"> 
+              <option selected="selected" value="lagos">LAGOS</option>
+
+<option value="abuja">ABUJA FCT</option>
+
+<option value="abia">ABIA</option>
+
+<option value="adamawa">ADAMAWA</option>
+
+<option value="akwa_ibom">AKWA IBOM</option>
+
+<option value="anambra">ANAMBRA</option>
+
+<option value="bauchi">BAUCHI</option>
+
+<option value="bayelsa">BAYELSA</option>
+
+<option value="benue">BENUE</option>
+
+<option value="borno">BORNO</option>
+
+<option value="rivers">CROSS RIVERS</option>
+
+<option value="delta">DELTA</option>
+
+<option value="ebonyi">EBONYI</option>
+
+<option value="edo">EDO</option>
+
+<option value="ekiti">EKITI</option>
+
+<option value="enugu">ENUGU</option>
+
+<option value="gombe">GOMBE</option>
+
+<option value="imo">IMO</option>
+
+<option value="jigawa">JIGAWA</option>
+
+<option value="kaduna">KADUNA</option>
+
+<option value="kano">KANO</option>
+
+<option value="kastina">KATSINA</option>
+
+<option value="kebbi">KEBBI</option>
+
+<option value="kogi">KOGI</option>
+
+<option value="kwara">KWARA</option>
+
+<option value="nassarawa">NASSARAWA</option>
+
+<option value="niger">NIGER</option>
+
+<option value="ogun">OGUN</option>
+
+<option value="ondo">ONDO</option>
+
+<option value="osun">OSUN</option>
+
+<option value="oyo">OYO</option>
+
+<option value="plateau">PLATEAU</option>
+
+<option value="river">RIVERS</option>
+
+<option value="sokoto">SOKOTO</option>
+
+<option value="taraba">TARABA</option>
+
+<option value="yobe">YOBE</option>
+
+<option value="zamfara">ZAMFARA</option>            </select>
+            <i class="arrow double"></i>                    
+          </label>
+        </div>
+      </div>
+    
+      <div class="colm colm4">
+        <div class="section">
+          <label for="occupation" class="field-label">Occupation</label>
+          <label class="field">
+            <input
+              type="text"
+              name="occupation"
+              id="occupation"
+              asp-for="Occupation"
+              value=""
+              class="gui-input"
+              placeholder="Enter your occupation"
+            >
+          </label>
+        </div>
+      </div>
+	
+	  
+	  <div class="colm colm4">
+        <div class="section">
+          <label for="identification_type" class="field-label">Identification Type</label>
+          <label class="field select">
+            <select class="form-control" id="identification_type" name="identificationtype" asp-for="IdentificationType"><option value="" selected="selected">Select One</option><option value="Driver&#039;s Licence">Driver&#039;s Licence</option><option value="International Passport">International Passport</option><option value="National ID. Card">National ID. Card</option></select>
+            <i class="arrow double"></i>      
+          </label>  
+        </div>    
+      </div>
+
+      <div class="colm colm4">
+        <div class="section">
+          <label for="identification_no" class="field-label">Identification Number</label>
+            <label class="field">
+              <input
+                type="text"
+                name="identificationno"
+                asp-for="IdentificationNo"
+                value=""
+                id="identification_no"
+                class="gui-input"
+                placeholder="Enter identification number"
+              >
+            </label>
+        </div>
+      </div>
+
+	  <div class="colm colm12">
+		<div class="section">
+			<label for="file1" class="field-label"> 
+			Upload means of Identification - 
+			<span class="small-text fine-grey">(ONLY JPG : PNG : PDF - 500KB MAX)</span> 
+			</label>
+			<label class="field prepend-icon file">
+			<span class="button btn-primary">Choose File</span>
+			<input
+				class="gui-file"
+				name="idUploaderFile"
+        asp-for="IdUploaderFile"
+				id="idUploaderFile"
+				onchange="validateFile(this, '#idUploaderFileText', 512000)"
+				type="file"
+			>
+			<input class="gui-input" id="idUploaderFileText" placeholder="no file selected" readonly="" type="text">
+			<span class="field-icon"><i class="fa fa-upload"></i></span>
+			</label>
+		</div>
+	  </div>
+    </div>
+  </div>

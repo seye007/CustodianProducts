@@ -1,0 +1,406 @@
+﻿@model EventInsuranceVm
+@{
+	Layout = "_EventInsurance";
+}
+<div class="stepwizard col-md-7 formtop-width" >
+	<div class="stepwizard-row setup-panel">
+		<div class="stepwizard-step">
+		<a class="btn btn-primary btn-circle disable" href="#step-1" >1</a>
+		<p>General Information</p>
+		</div>
+	</div>
+</div>
+
+  <div class="row">
+    <div class="col-md-7 form-sha" style="">
+      <form id="product-form" role="form" asp-antiforgery="true" asp-action="Index" method="post" enctype="multipart/form-data">
+        <div class="row setup-content" id="step-1">
+          <div class="col-md-12" style="padding-bottom: 10px">
+	<h3 class="text-center fontn">General Information</h3>
+	<div class="smart-forms">
+		<div class="frm-row">
+	
+		<div class="colm colm4">
+			<div class="section">
+			<label for="firstname" class="field-label">First Name</label>
+			<label class="field">
+				<input
+					type="text"
+					name="firstname"
+					value=""
+					id="firstname"
+					asp-for="FirstName"
+					class="gui-input"
+					placeholder="First Name"
+					>
+
+					<span id="validation-message" asp-validation-for="FirstName"></span>
+			</label>
+			</div>
+		</div>
+	
+		<div class="colm colm4">
+			<div class="section">
+			<label for="lastname" class="field-label">Surname</label>
+				<label class="field">
+				<input
+					type="text"
+					name="lastname"
+					asp-for="LastName"
+					value=""
+					id="lastname"
+					class="gui-input"
+					placeholder="Surname"
+					>
+					
+					<span id="validation-message" asp-validation-for="LastName"></span>
+				</label>
+			</div>
+		</div>
+
+		<div class="colm colm4">
+			<div class="section">
+				<label for="company_name" class="field-label">Company Name <small>(for corporate)</small></label>
+				<label class="field">
+					<input
+						type="text"
+						name="companyname"
+						asp-for="CompanyName"
+						value=""
+						id="company_name"
+						class="gui-input"
+						placeholder="Company Name"
+						>
+				</label>
+					
+					<span id="validation-message" asp-validation-for="CompanyName"></span>
+			</div>
+		</div>
+	
+		<div class="colm colm4">
+			<div class="section">
+			<label for="email_address" class="field-label">Email</label>
+			<label class="field">
+				<input
+					type="email"
+					name="email"
+					asp-for="Email"
+					value=""
+					id="email_address"
+					class="gui-input"
+					placeholder="Email"
+					>
+			</label>
+				
+					<span id="validation-message" asp-validation-for="Email"></span>
+			</div>
+		</div>
+		
+		<div class="colm colm4">
+			<div class="section">
+			<label for="phone_number" class="field-label">Mobile No.</label>
+			<label class="field">
+				<input
+				type="tel"
+				name="phonenumber"
+				asp-for="PhoneNumber"
+				id="phone_number"
+				value=""
+				class="gui-input phone_mask"
+				maxlength="14"
+				placeholder="Mobile No."
+				>
+			</label>
+				
+					<span id="validation-message" asp-validation-for="PhoneNumber"></span>
+			</div>
+		</div>   
+
+		<div class="colm colm4">
+			<div class="section">
+			<label for="involvement_details" class="field-label">What is your involvement in the event?</label>
+			<label class="field select" id="sel_involvement_details">
+				<select id="involvement_details" name="involvementdetails" asp-for="InvolvementDetails">
+					<option value="">Select one</option>
+					<option value="Organizer">Organizer</option>
+					<option value="Manager">Manager</option>
+					<option value="Promoter">Promoter</option>
+					<option value="Others">Others (please specify)</option>
+				</select>
+				<i class="arrow double"></i>                    
+			</label>
+				
+					<span id="validation-message" asp-validation-for="InvolvementDetails"></span>
+			<label class="field" id="inp_involvement_details" style="display: none;">
+				<input
+					type="text"
+					name="involvementdetails"
+					asp-for="InvolvementDetails"
+					value=""
+					id="involvement_details"
+					class="gui-input"
+					placeholder="Input your answer"
+					disabled
+					>
+			</label> 
+			</div>
+		</div>
+
+		<div class="colm colm4">
+			<div class="section">
+			<label for="event_type" class="field-label">Event Type</label>
+			<label class="field select" id="sel_event_type">
+				<select id="event_type" name="eventtype" asp-for="EventType">
+					<option value="">Select one</option>
+					<option value="Conference">Conference</option>
+					<option value="Festival">Festival</option>
+					<option value="Sports">Sports</option>
+					<option value="Religion">Religion</option>
+					<option value="Political">Political</option>
+					<option value="Ceremony">Ceremony</option>
+					<option value="Others">Others (please specify)</option>
+				</select>
+				<i class="arrow double"></i>                    
+			</label>
+				
+			<label class="field" id="inp_event_type" style="display: none;">
+				<input
+					type="text"
+					name="eventtype"
+					value=""
+					id="eventtype"
+					asp-for="EventType"
+					class="gui-input"
+					placeholder="Input your answer"
+					disabled
+					>
+			</label>
+			<span id="validation-message" asp-validation-for="EventType"></span>
+			</div>
+		</div>
+
+		<div class="colm colm4">
+			<div class="section">
+			<label for="event_holding_type" class="field-label">Where will the event be held?</label>
+			<label class="field select" id="sel_event_holding_type">
+				<select id="event_holding_type" name="eventholdingtype" asp-for="EventHoldingType">
+					<option value="">Select one</option>
+					<option value="Indoors (standard structure)">Indoors (standard structure)</option>
+					<option value="Outdoors (open air)">Outdoors (open air)</option>
+					<option value="Under Canvass">Under Canvass</option>
+					<option value="Temporary Structure">Temporary Structure</option>
+					<option value="Others">Others (please specify)</option>
+				</select>
+				<i class="arrow double"></i>                    
+			</label>
+			<label class="field" id="inp_event_holding_type" style="display: none;">
+				<input
+					type="text"
+					name="eventholdingtype"
+					value=""
+					asp-for="EventHoldingType"
+					id="event_holding_type"
+					class="gui-input"
+					placeholder="Input your answer"
+					disabled
+					>
+			</label>
+			<span id="validation-message" asp-validation-for="EventHoldingType"></span>
+			</div>
+		</div>
+
+		<div class="colm colm4">
+			<div class="section">
+			<label for="expected_guests" class="field-label">Expected No. of Guests</label>
+			<label class="field select">
+				<select id="expected_guests" name="expectedguests" asp-for="ExpectedGuests">
+				<option value="">Select one</option>
+				<option value="< 50"> < 50</option>
+				<option value="50 - 100">50 - 100</option>
+				<option value="101 - 200">101 - 200</option>
+				<option value="201 - 300">201 - 300</option>
+				<option value="301 - 400">301 - 400</option>
+				<option value="401 - 500">401 - 500</option>
+				<option value="> 500"> > 500</option>
+				</select>
+				<i class="arrow double"></i>                    
+			</label> 
+			<span id="validation-message" asp-validation-for="ExpectedGuests"></span>
+			</div>
+		</div>
+
+		<div class="colm colm4">
+			<div class="section">
+			<label for="sum_insured" class="field-label">Sum Insured</label>
+			<label class="field">
+				<input
+					type="number"
+					name="suminsured"
+					asp-for="SumInsured"
+					id="sum_insured"
+					value=""
+					class="gui-input money-mask"
+					maxlength="14"
+					min="0"
+					placeholder="Input sum insured"
+				>
+			</label>
+			<span id="validation-message" asp-validation-for="SumInsured"></span>
+			</div>
+		</div>
+	
+		<div class="colm colm4">
+			<div class="section">
+			<label for="event_date" class="field-label">Event Date</label>
+			<label class="field">
+				<input
+					type="text"
+					name="eventdate"
+					asp-for="EventDate"
+					id="event_date"
+					class="gui-input datepicker-here"
+					data-language="en"
+					data-date-format="yyyy-mm-dd"
+					readonly="true"
+					value=""
+					placeholder="yyyy-mm-dd"
+				>
+			</label>
+			<span id="validation-message" asp-validation-for="EventDate"></span>
+			</div>
+		</div>
+
+		<div class="colm colm4">
+			<div class="section">
+			<label for="event_duration" class="field-label">Event Duration <small>(only number of days allowed)</small></label>
+			<label class="field">
+				<input
+					type="number"
+					name="eventduration"
+					asp-for="EventDuration"
+					id="event_duration"
+					value=""
+					class="gui-input"
+					maxlength="14"
+					min="0"
+					max="365"
+					placeholder="Input event duration"
+				>
+			</label>
+			<span id="validation-message" asp-validation-for="EventDuration"></span>
+			</div>
+		</div>
+	
+		</div>
+
+		<div id="event_covers">
+			<label for="event_covers" class="field-label" style="margin-bottom:3px;padding:0;">Select the covers you want</label>
+			<div class="row">
+				<div class="col-md-4">
+					<label class="option block">
+						<input onchange="checkSelected()" type="checkbox" name="PublicLiability" asp-for="PublicLiability">
+						<span class="checkbox"></span> 
+						Public Liability                  
+					</label>
+				</div>
+				
+				<div class="col-md-4">
+					<label class="option block">
+						<input onchange="checkSelected()" type="checkbox" name="ProfessionalIndemnity" asp-for="ProfessionalIndemnity">
+						<span class="checkbox"></span> 
+						Professional Indemnity                 
+					</label>
+				</div>
+				
+				<div class="col-md-4">
+					<label class="option block">
+						<input onchange="checkSelected()" type="checkbox" name="EventEquipment" asp-for="EventEquipment">
+						<span class="checkbox"></span> 
+						Event Equipment
+					</label>
+				</div>
+				<br><br>
+				<div class="col-md-4">
+					<label class="option block">
+						<input onchange="checkSelected()" type="checkbox" name="EventCancellation" asp-for="EventCancellation">
+						<span class="checkbox"></span> 
+						Event Cancellation                  
+					</label>
+				</div>
+
+				<div class="col-md-4">
+					<label class="option block">
+						<input onchange="checkSelected()" type="checkbox" name="EmployeeAccidentBenefit" asp-for="EmployeeAccidentBenefit">
+						<span class="checkbox"></span> 
+						Employee Accident Benefit                  
+					</label>
+				</div>
+
+			</div>
+		</div>
+	</div>
+	
+	<button
+		class="btn btn-primary btn-class pull-right"
+		style="margin-bottom: 10px;"
+		id="_first-next-button"
+		type="submit"
+	>
+		Submit
+	</button>
+</div>        </div>
+        
+      </form>
+    </div>
+
+    <div class="col-md-5"style="margin-top:-3px;">
+      <div class="info">
+      
+      <div class="overlay-content">
+        <h2 style="color:#fff;">Custodian Events Insurance</h2>
+        <hr>
+
+        <div class="content">
+            <p class="text-justify">
+              Hosting an event is a big investment; one that comes with many uncertainties no matter how well you plan the event. Custodian Events Insurance can help you secure this investment as it protects the policy holder from any unforeseen circumstances which could lead to public liability claims, accidental injuries to guests, loss or damage of event equipment, professional liability claims as well as employee liability claims.
+              <br />
+              Furthermore, Custodian Events Insurance can be extended to cover event cancellation due to specified causes and also litigation cost incurred by the Insured with the consent of the Insurer.
+            </p>
+
+            <p>Benefits of the Policy</p>
+            <div id="summary">
+              <div class="collapse" id="collapseSummary">
+                <ul>
+                  <li> Gives peace of mind to all stakeholders i.e. Event planner, Principal, Guest and Venue owners.</li>
+                  <li> Provides compensation to guests and employees for medical expenses - bodily injuries and temporary disabilities occurring at the venue of the event.</li>
+                  <li> Provides protection for the event planner in the event of public liability claims made in respect of death /bodily injuries to Third Party Persons as well as damage to properties during the event and at the venue.</li>
+                  <li> Eases the financial losses associated with cancellation of events</li>
+                  <li> Provides the widest insurance coverage compared to others in the market.</li>
+                </ul>
+              </div>
+              <a class="collapsed" data-toggle="collapse" href="#collapseSummary" aria-expanded="false" aria-controls="collapseSummary"></a>
+            </div>  
+
+            <br />
+            <p>Features of the Policy</p>
+            <div id="summary">
+              <div class="collapse" id="collapseSummary1">
+                The Event Insurance policy is specially designed to include features of the following classes of insurance:
+                <br />
+                <ul>
+                  <li><b>Public Liability Insurance</b> which covers the Insured’s legal liability to pay damages, claimant’s costs and expenses which arise as a result of injuries to invited guests and third parties arising out of and in connection with the event.</li>
+                  <li><b>Professional Liability Insurance</b> which provides cover for the Insured in respect of any loss or liability arising from any claim or claims for breach of professional duty by reason of any neglect, error or omission committed in the conduct of the insured's business in its professional capacity or any person in the employment of the insured.</li>
+                  <li><b>Event Equipment Insurance</b> - provides cover for the loss of, or damage to the Insured's equipment or equipment the Insured is responsible for during and in association with the event.</li>
+                  <li><b>Employee Accident Benefit Insurance</b> - provides compensation to employees for death or bodily injury by accident or disease arising out of and in the course of the event / employment with the Insured.</li>
+                  <li><b>Event Cancellation Insurance</b> - protects the expenses already incurred on an event against cancellation due to circumstances beyond the Insured's control. These circumstances can include, but are not limited to severe/adverse weather; Riots, Strikes and labour disturbances; unavailability of the venue due to fires, floods etc.</li>
+                </ul>
+              </div>
+              <a class="collapsed" data-toggle="collapse" href="#collapseSummary1" aria-expanded="false" aria-controls="collapseSummary1"></a>
+            </div>               
+         </div>
+
+
+     </div>
+      
+    </div>    </div>
+  </div>

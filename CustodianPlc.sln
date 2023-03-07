@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustodianPlc", "CustodianPlc\CustodianPlc.csproj", "{7EF3EABD-99A0-4997-8AFD-AE409840433C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7EF3EABD-99A0-4997-8AFD-AE409840433C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EF3EABD-99A0-4997-8AFD-AE409840433C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EF3EABD-99A0-4997-8AFD-AE409840433C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EF3EABD-99A0-4997-8AFD-AE409840433C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {35F287AC-02BB-4093-A6B2-BF68C68206B2}
+	EndGlobalSection
+EndGlobal

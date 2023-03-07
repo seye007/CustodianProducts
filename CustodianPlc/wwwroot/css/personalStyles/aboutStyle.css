@@ -1,0 +1,1765 @@
+input:focus { 
+    outline: none !important;
+    border-color: #888D8E;
+    box-shadow: 0 0 10px #888D8E;
+}
+
+.top-bar.top-bar-dark .top-link li a:hover, a:hover {
+    color: #646464;
+}
+
+.sigfooter{
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.sig{
+    margin-right: 1rem;
+}
+
+.invisible{padding-top: 0px; padding-bottom: 0px;}
+
+#general>.navContainerGeneral {
+    display: none !important;
+    /* margin-top: -224px !important;*/
+}
+
+#general:hover>.navContainerGeneral {
+    margin-top: -224px !important;
+    display: block !important;
+    cursor: pointer;
+}
+
+#general:hover>.navContainerGeneral::after {
+    content: "";
+    position: absolute;
+    top: 224px;
+    left: 107px;
+    border-width: 15px 15px 0;
+    border-style: solid;
+    border-color: #ffffff transparent;
+    display: block;
+    width: 0;
+}
+
+.navContainerGeneral {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    background-repeat: no-repeat;
+    background-image: url(../../img/custom/General.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 224px;
+    width: 100%;
+}
+
+#lifeInsuance>.navContainerLifeInsurance {
+    display: none !important;
+    /* margin-top: -240px !important;  */
+}
+
+#lifeInsuance:hover>.navContainerLifeInsurance {
+    margin-top: -224px !important;
+    display: block !important;
+    cursor: pointer;
+}
+
+#lifeInsuance:hover>.navContainerLifeInsurance::after {
+    content: "";
+    position: absolute;
+    top: 224px;
+    left: 107px;
+    border-width: 15px 15px 0;
+    border-style: solid;
+    border-color: #ffffff transparent;
+    display: block;
+    width: 0;
+}
+
+.navContainerLifeInsurance {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    background-repeat: no-repeat;
+    background-image: url(../../img/custom/LifeInsurance.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 224px;
+    width: 100%;
+}
+
+.navContainerLifeInsurance .navLink:hover {
+    color: #a5a5a5 !important;
+    text-decoration-line: none;
+}
+
+#trustees>.navContainerTrustees {
+    display: none !important;
+    /* margin-top: -224px !important; */
+}
+
+#trustees:hover>.navContainerTrustees {
+    margin-top: -224px !important;
+    display: block !important;
+    cursor: pointer;
+}
+
+#trustees:hover>.navContainerTrustees::after {
+    content: "";
+    position: absolute;
+    top: 224px;
+    left: 107px;
+    border-width: 15px 15px 0;
+    border-style: solid;
+    border-color: #ffffff transparent;
+    display: block;
+    width: 0;
+}
+
+.navContainerTrustees {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    background-repeat: no-repeat;
+    background-image: url(../../img/custom/Trustees.png);
+    background-position: center;
+    background-size: cover;
+    height: 224px;
+    width: 100%;
+}
+
+#pension>.navContainerPension {
+    display: none !important;
+    /* margin-top: -240px !important; */
+}
+
+#pension:hover>.navContainerPension {
+    margin-top: -224px !important;
+    display: block !important;
+    cursor: pointer;
+}
+
+#pension:hover>.navContainerPension::after {
+    content: "";
+    position: absolute;
+    top: 224px;
+    left: 107px;
+    border-width: 15px 15px 0;
+    border-style: solid;
+    border-color: #ffffff transparent;
+    display: block;
+    width: 0;
+}
+
+.navContainerPension {
+    position: absolute;
+    z-index: 1;
+    display: block;
+    background-repeat: no-repeat;
+    background-image: url(../../img/custom/Trustees.png);
+    background-position: center;
+    background-size: cover;
+    height: 224px;
+    width: 100%;
+}
+
+.navLink {
+    margin: 13px 15px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #ffffff !important;
+    display: block;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.navLink:hover {
+    color: #a50505 !important;
+    text-decoration-line: none;
+}
+
+.glyphicon glyphicon-play {
+    font-size: 5px;
+}
+
+.iconDesign {
+    position: relative;
+    margin-right: 17px;
+}
+
+.moreLink {
+    text-decoration: none;
+    margin: 30px 70px;
+    font-size: 16px;
+    color: yellow !important;
+    display: block;
+    cursor: pointer;
+    z-index: 5;
+}
+
+/* Media Section for responsiveness */
+
+@media only screen and (min-width: 995px) and (max-width: 1200px) {
+    .navContainerGeneral {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        background-repeat: no-repeat;
+        background-image: url(../../img/custom/General.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 224px;
+        width: 237px;
+    }
+        /* Arrow on the tab for general tab */
+    #general:hover>.navContainerGeneral::after {
+        content: "";
+        position: absolute;
+        top: 224px;
+        left: 105px;
+        border-width: 15px 15px 0;
+        border-style: solid;
+        border-color: #ffffff transparent;
+        display: block;
+        width: 0;
+    }
+    .navContainerLifeInsurance {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        background-repeat: no-repeat;
+        background-image: url(../../img/custom/LifeInsurance.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 224px;
+        width: 237px;
+    }
+         /* Arrow on the tab for Insurance tab */
+    #lifeInsuance:hover>.navContainerLifeInsurance::after {
+        content: "";
+        position: absolute;
+        top: 224px;
+        left: 105px;
+        border-width: 15px 15px 0;
+        border-style: solid;
+        border-color: #ffffff transparent;
+        display: block;
+        width: 0;
+    }
+    .navContainerTrustees {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        background-repeat: no-repeat;
+        background-image: url(../../img/custom/Trustees.png);
+        background-position: center;
+        background-size: cover;
+        height: 224px;
+        width: 237px;
+    }
+         /* Arrow on the tab for Trustee tab */
+
+    #trustees:hover>.navContainerTrustees::after {
+        content: "";
+        position: absolute;
+        top: 224px;
+        left: 105px;
+        border-width: 15px 15px 0;
+        border-style: solid;
+        border-color: #ffffff transparent;
+        display: block;
+        width: 0;
+    }
+    .navContainerPension {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        background-repeat: no-repeat;
+        background-image: url(../../img/custom/Trustees.png);
+        background-position: center;
+        background-size: cover;
+        height: 224px;
+        width: 237px;
+    }
+         /* Arrow on the tab for Pension tab */
+    #pension:hover>.navContainerPension::after {
+        content: "";
+        position: absolute;
+        top: 224px;
+        left: 105px;
+        border-width: 15px 15px 0;
+        border-style: solid;
+        border-color: #ffffff transparent;
+        display: block;
+        width: 0;
+    }
+         /* Text link on the pop up box when hovered */
+    .navLink {
+        margin: 13px 25px;
+        text-decoration: none;
+        font-size: 20px;
+        color: #ffffff !important;
+        display: block;
+        cursor: pointer;
+        z-index: 5;
+    }
+
+        /* Text link learn more on the pop up box when hovered */
+    .moreLink {
+        text-decoration: none;
+        margin: 20px 70px;
+        font-size: 16px;
+        color: yellow !important;
+        display: block;
+        cursor: pointer;
+        z-index: 5;
+    }
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 994px) {
+    .navContainerGeneral {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        background-repeat: no-repeat;
+        background-image: url(../../img/custom/General.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 224px;
+        width: 178px;
+    }
+    #general:hover>.navContainerGeneral::after {
+        content: "";
+        position: absolute;
+        top: 224px;
+        left: 75px;
+        border-width: 15px 15px 0;
+        border-style: solid;
+        border-color: #ffffff transparent;
+        display: block;
+        width: 0;
+    }
+    .navContainerLifeInsurance {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        background-repeat: no-repeat;
+        background-image: url(../../img/custom/LifeInsurance.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 224px;
+        width: 178px;
+    }
+    #lifeInsuance:hover>.navContainerLifeInsurance::after {
+        content: "";
+        position: absolute;
+        top: 224px;
+        left: 75px;
+        border-width: 15px 15px 0;
+        border-style: solid;
+        border-color: #ffffff transparent;
+        display: block;
+        width: 0;
+    }
+    .navContainerTrustees {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        background-repeat: no-repeat;
+        background-image: url(../../img/custom/Trustees.png);
+        background-position: center;
+        background-size: cover;
+        height: 224px;
+        width: 178px;
+    }
+    #trustees:hover>.navContainerTrustees::after {
+        content: "";
+        position: absolute;
+        top: 224px;
+        left: 75px;
+        border-width: 15px 15px 0;
+        border-style: solid;
+        border-color: #ffffff transparent;
+        display: block;
+        width: 0;
+    }
+    .navContainerPension {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        background-repeat: no-repeat;
+        background-image: url(../../img/custom/Trustees.png);
+        background-position: center;
+        background-size: cover;
+        height: 224px;
+        width: 178px;
+    }
+    #pension:hover>.navContainerPension::after {
+        content: "";
+        position: absolute;
+        top: 224px;
+        left: 75px;
+        border-width: 15px 15px 0;
+        border-style: solid;
+        border-color: #ffffff transparent;
+        display: block;
+        width: 0;
+    }
+    .navLink {
+        margin: 15px 15px;
+        text-decoration: none;
+        font-size: 16px;
+        color: #ffffff !important;
+        display: block;
+        cursor: pointer;
+        z-index: 5;
+    }
+    .moreLink {
+        text-decoration: none;
+        margin: 20px 40px;
+        font-size: 14px;
+        color: yellow !important;
+        display: block;
+        cursor: pointer;
+        z-index: 5;
+    }
+
+    
+    li>a>img {
+    width: 70px!important;
+   }
+
+   .stepwizard {
+    display: table;
+    width: 100% !important; 
+    position: relative;
+}
+
+.padform{
+
+    padding-top:15px;
+    padding-left:70px !important;
+    padding-right:70px !important;
+}
+.section-tiny {
+     background-position: center !important;
+     padding: 0px 0px !important;
+     height: auto !IMPORTANT;
+}
+
+
+}
+
+@media only screen and (min-width: 555px) and (max-width: 767px) {
+    #general:hover>.navContainerGeneral {
+        margin-top: -200px !important;
+        display: block !important;
+        cursor: pointer;
+    }
+    #lifeInsuance:hover>.navContainerLifeInsurance {
+        margin-top: -200px !important;
+        display: block !important;
+        cursor: pointer;
+    }
+    #trustees:hover>.navContainerTrustees {
+        margin-top: -200px !important;
+        display: block !important;
+        cursor: pointer;
+    }
+    #pension:hover>.navContainerPension {
+        margin-top: -200px !important;
+        display: block !important;
+        cursor: pointer;
+    }
+    .navContainerGeneral {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        background-repeat: no-repeat;
+        background-image: url(../../img/custom/General.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 200px;
+        width: 100%;
+    }
+    #general:hover>.navContainerGeneral::after {
+        content: "";
+        position: absolute;
+        top: 200px;
+        left: 240px;
+        border-width: 15px 15px 0;
+        border-style: solid;
+        border-color: #ffffff transparent;
+        display: block;
+        width: 0;
+    }
+    .navContainerLifeInsurance {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        background-repeat: no-repeat;
+        background-image: url(../../img/custom/LifeInsurance.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 200px;
+        width: 100%;
+    }
+    #lifeInsuance:hover>.navContainerLifeInsurance::after {
+        content: "";
+        position: absolute;
+        top: 200px;
+        left: 240px;
+        border-width: 15px 15px 0;
+        border-style: solid;
+        border-color: #ffffff transparent;
+        display: block;
+        width: 0;
+    }
+    .navContainerTrustees {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        background-repeat: no-repeat;
+        background-image: url(../../img/custom/Trustees.png);
+        background-position: center;
+        background-size: cover;
+        height: 200px;
+        width: 100%;
+    }
+    #trustees:hover>.navContainerTrustees::after {
+        content: "";
+        position: absolute;
+        top: 200px;
+        left: 240px;
+        border-width: 15px 15px 0;
+        border-style: solid;
+        border-color: #ffffff transparent;
+        display: block;
+        width: 0;
+    }
+    .navContainerPension {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        background-repeat: no-repeat;
+        background-image: url(../../img/custom/Trustees.png);
+        background-position: center;
+        background-size: cover;
+        height: 200px;
+        width: 100%;
+    }
+    #pension:hover>.navContainerPension::after {
+        content: "";
+        position: absolute;
+        top: 200px;
+        left: 240px;
+        border-width: 15px 15px 0;
+        border-style: solid;
+        border-color: #ffffff transparent;
+        display: block;
+        width: 0;
+    }
+    .navLink {
+        margin: 15px 175px;
+        text-decoration: none;
+        font-size: 16px;
+        color: #ffffff !important;
+        display: block;
+        cursor: pointer;
+        z-index: 5;
+    }
+    .moreLink {
+        text-decoration: none;
+        margin: 0px 220px;
+        font-size: 14px;
+        color: yellow !important;
+        display: block;
+        cursor: pointer;
+        z-index: 5;
+    }
+
+    li>a>img {
+    width: 80px!important;
+}
+.menuzord-menu > li > a {
+    color: #ffffff !important;
+}
+
+.section-tiny {
+     padding: 0px 0px !important;
+}
+
+.stepwizard {
+    display: table;
+    width: 100% !important; 
+    position: relative;
+}
+
+.padform{
+
+    padding-top:15px;
+    padding-left:70px !important;
+    padding-right:70px !important;
+}
+}
+
+@media only screen and (min-width: 535px) and (max-width: 554px) {
+    #general:hover>.navContainerGeneral {
+        margin-top: -200px !important;
+        display: block !important;
+        cursor: pointer;
+    }
+    #lifeInsuance:hover>.navContainerLifeInsurance {
+        margin-top: -200px !important;
+        display: block !important;
+        cursor: pointer;
+    }
+    #trustees:hover>.navContainerTrustees {
+        margin-top: -200px !important;
+        display: block !important;
+        cursor: pointer;
+    }
+    #pension:hover>.navContainerPension {
+        margin-top: -200px !important;
+        display: block !important;
+        cursor: pointer;
+    }
+    .navContainerGeneral {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        background-repeat: no-repeat;
+        background-image: url(../../img/custom/General.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 200px;
+        width: 538px;
+    }
+    #general:hover>.navContainerGeneral::after {
+        content: "";
+        position: absolute;
+        top: 200px;
+        left: 250px;
+        border-width: 15px 15px 0;
+        border-style: solid;
+        border-color: #ffffff transparent;
+        display: block;
+        width: 0;
+    }
+    .navContainerLifeInsurance {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        background-repeat: no-repeat;
+        background-image: url(../../img/custom/LifeInsurance.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 200px;
+        width: 538px;
+    }
+    #lifeInsuance:hover>.navContainerLifeInsurance::after {
+        content: "";
+        position: absolute;
+        top: 200px;
+        left: 250px;
+        border-width: 15px 15px 0;
+        border-style: solid;
+        border-color: #ffffff transparent;
+        display: block;
+        width: 0;
+    }
+    .navContainerTrustees {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        background-repeat: no-repeat;
+        background-image: url(../../img/custom/Trustees.png);
+        background-position: center;
+        background-size: cover;
+        height: 200px;
+        width: 538px;
+    }
+    #trustees:hover>.navContainerTrustees::after {
+        content: "";
+        position: absolute;
+        top: 200px;
+        left: 250px;
+        border-width: 15px 15px 0;
+        border-style: solid;
+        border-color: #ffffff transparent;
+        display: block;
+        width: 0;
+    }
+    .navContainerPension {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        background-repeat: no-repeat;
+        background-image: url(../../img/custom/Trustees.png);
+        background-position: center;
+        background-size: cover;
+        height: 200px;
+        width: 538px;
+    }
+    #pension:hover>.navContainerPension::after {
+        content: "";
+        position: absolute;
+        top: 200px;
+        left: 250px;
+        border-width: 15px 15px 0;
+        border-style: solid;
+        border-color: #ffffff transparent;
+        display: block;
+        width: 0;
+    }
+    .navLink {
+        margin: 15px 185px;
+        text-decoration: none;
+        font-size: 16px;
+        color: #ffffff !important;
+        display: block;
+        cursor: pointer;
+        z-index: 5;
+    }
+    .moreLink {
+        text-decoration: none;
+        margin: 0px 220px;
+        font-size: 14px;
+        color: yellow !important;
+        display: block;
+        cursor: pointer;
+        z-index: 5;
+    }
+
+    li>a>img {
+    width: 70px!important;
+}
+
+.menuzord-menu > li > a {
+    color: #ffffff !important;
+}
+
+.section-tiny {
+     padding: 0px 0px !important;
+}
+
+.stepwizard {
+    display: table;
+    width: 100% !important; 
+    position: relative;
+}
+
+.padform{
+
+    padding-top:15px;
+    padding-left:60px !important;
+    padding-right:60px !important;
+}
+
+
+
+}
+
+@media only screen and (min-width: 500px) and (max-width: 534px) {
+    #general:hover>.navContainerGeneral {
+        margin-top: -200px !important;
+        display: block !important;
+        cursor: pointer;
+    }
+    #lifeInsuance:hover>.navContainerLifeInsurance {
+        margin-top: -200px !important;
+        display: block !important;
+        cursor: pointer;
+    }
+    #trustees:hover>.navContainerTrustees {
+        margin-top: -200px !important;
+        display: block !important;
+        cursor: pointer;
+    }
+    #pension:hover>.navContainerPension {
+        margin-top: -200px !important;
+        display: block !important;
+        cursor: pointer;
+    }
+    .navContainerGeneral {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        background-repeat: no-repeat;
+        background-image: url(../../img/custom/General.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 200px;
+        width: 100%;
+    }
+    #general:hover>.navContainerGeneral::after {
+        content: "";
+        position: absolute;
+        top: 200px;
+        left: 213px;
+        border-width: 15px 15px 0;
+        border-style: solid;
+        border-color: #ffffff transparent;
+        display: block;
+        width: 0;
+    }
+    .navContainerLifeInsurance {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        background-repeat: no-repeat;
+        background-image: url(../../img/custom/LifeInsurance.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 200px;
+        width: 100%;
+    }
+    #lifeInsuance:hover>.navContainerLifeInsurance::after {
+        content: "";
+        position: absolute;
+        top: 200px;
+        left: 213px;
+        border-width: 15px 15px 0;
+        border-style: solid;
+        border-color: #ffffff transparent;
+        display: block;
+        width: 0;
+    }
+    .navContainerTrustees {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        background-repeat: no-repeat;
+        background-image: url(../../img/custom/Trustees.png);
+        background-position: center;
+        background-size: cover;
+        height: 200px;
+        width: 100%;
+    }
+    #trustees:hover>.navContainerTrustees::after {
+        content: "";
+        position: absolute;
+        top: 200px;
+        left: 213px;
+        border-width: 15px 15px 0;
+        border-style: solid;
+        border-color: #ffffff transparent;
+        display: block;
+        width: 0;
+    }
+    .navContainerPension {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        background-repeat: no-repeat;
+        background-image: url(../../img/custom/Trustees.png);
+        background-position: center;
+        background-size: cover;
+        height: 200px;
+        width: 100%;
+    }
+    #pension:hover>.navContainerPension::after {
+        content: "";
+        position: absolute;
+        top: 200px;
+        left: 213px;
+        border-width: 15px 15px 0;
+        border-style: solid;
+        border-color: #ffffff transparent;
+        display: block;
+        width: 0;
+    }
+    .navLink {
+        margin: 15px 145px;
+        text-decoration: none;
+        font-size: 16px;
+        color: #ffffff !important;
+        display: block;
+        cursor: pointer;
+        z-index: 5;
+    }
+    .moreLink {
+        text-decoration: none;
+        margin: 0px 200px;
+        font-size: 14px;
+        color: yellow !important;
+        display: block;
+        cursor: pointer;
+        z-index: 5;
+    }
+    li>a>img {
+    width: 70px!important;
+}
+
+.menuzord-menu > li > a {
+    color: #d03939 !important;
+}
+
+.section-tiny {
+     padding: 0px 0px !important;
+}
+
+
+.stepwizard {
+    display: table;
+    width: 100% !important; 
+    position: relative;
+}
+
+.padform{
+
+    padding-top:15px;
+    padding-left:60px !important;
+    padding-right:60px !important;
+}
+
+}
+
+@media only screen and (min-width: 455px) and (max-width: 499px) {
+    #general:hover>.navContainerGeneral {
+        margin-top: -200px !important;
+        display: block !important;
+        cursor: pointer;
+    }
+    #lifeInsuance:hover>.navContainerLifeInsurance {
+        margin-top: -200px !important;
+        display: block !important;
+        cursor: pointer;
+    }
+    #trustees:hover>.navContainerTrustees {
+        margin-top: -200px !important;
+        display: block !important;
+        cursor: pointer;
+    }
+    #pension:hover>.navContainerPension {
+        margin-top: -200px !important;
+        display: block !important;
+        cursor: pointer;
+    }
+    .navContainerGeneral {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        background-repeat: no-repeat;
+        background-image: url(../../img/custom/General.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 200px;
+        width: 100%;
+    }
+    #general:hover>.navContainerGeneral::after {
+        content: "";
+        position: absolute;
+        top: 200px;
+        left: 185px;
+        border-width: 15px 15px 0;
+        border-style: solid;
+        border-color: #ffffff transparent;
+        display: block;
+        width: 0;
+    }
+    .navContainerLifeInsurance {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        background-repeat: no-repeat;
+        background-image: url(../../img/custom/LifeInsurance.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 200px;
+        width: 100%;
+    }
+    #lifeInsuance:hover>.navContainerLifeInsurance::after {
+        content: "";
+        position: absolute;
+        top: 200px;
+        left: 185px;
+        border-width: 15px 15px 0;
+        border-style: solid;
+        border-color: #ffffff transparent;
+        display: block;
+        width: 0;
+    }
+    .navContainerTrustees {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        background-repeat: no-repeat;
+        background-image: url(../../img/custom/Trustees.png);
+        background-position: center;
+        background-size: cover;
+        height: 200px;
+        width: 100%;
+    }
+    #trustees:hover>.navContainerTrustees::after {
+        content: "";
+        position: absolute;
+        top: 200px;
+        left: 185px;
+        border-width: 15px 15px 0;
+        border-style: solid;
+        border-color: #ffffff transparent;
+        display: block;
+        width: 0;
+    }
+    .navContainerPension {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        background-repeat: no-repeat;
+        background-image: url(../../img/custom/Trustees.png);
+        background-position: center;
+        background-size: cover;
+        height: 200px;
+        width: 100%;
+    }
+    #pension:hover>.navContainerPension::after {
+        content: "";
+        position: absolute;
+        top: 200px;
+        left: 185px;
+        border-width: 15px 15px 0;
+        border-style: solid;
+        border-color: #ffffff transparent;
+        display: block;
+        width: 0;
+    }
+    .navLink {
+        margin: 15px 65px;
+        text-decoration: none;
+        font-size: 16px;
+        color: #ffffff !important;
+        display: block;
+        cursor: pointer;
+        z-index: 5;
+    }
+    .moreLink {
+        text-decoration: none;
+        margin: 0px 170px;
+        font-size: 14px;
+        color: yellow !important;
+        display: block;
+        cursor: pointer;
+        z-index: 5;
+    }
+    li>a>img{
+    width: 70px!important;
+}
+
+.menuzord-menu > li > a {
+    color: #d03939 !important;
+}
+.section-tiny {
+     padding: 0px 0px !important;
+}
+
+.stepwizard {
+    display: table;
+    width: 100% !important; 
+    position: relative;
+}
+
+.padform{
+
+    padding-top:15px;
+    padding-left:40px !important;
+    padding-right:40px !important;
+}
+
+}
+
+@media only screen and (min-width: 412px) and (max-width: 454px) {
+    #general:hover>.navContainerGeneral {
+        margin-top: -200px !important;
+        display: block !important;
+        cursor: pointer;
+    }
+
+
+    #lifeInsuance:hover>.navContainerLifeInsurance {
+        margin-top: -200px !important;
+        display: block !important;
+        cursor: pointer;
+    }
+    #trustees:hover>.navContainerTrustees {
+        margin-top: -200px !important;
+        display: block !important;
+        cursor: pointer;
+    }
+    #pension:hover>.navContainerPension {
+        margin-top: -200px !important;
+        display: block !important;
+        cursor: pointer;
+    }
+    .navContainerGeneral {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        background-repeat: no-repeat;
+        background-image: url(../../img/custom/General.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 200px;
+        width: 100%;
+    }
+    #general:hover>.navContainerGeneral::after {
+        content: "";
+        position: absolute;
+        top: 200px;
+        left: 170px;
+        border-width: 15px 15px 0;
+        border-style: solid;
+        border-color: #ffffff transparent;
+        display: block;
+        width: 0;
+    }
+    .navContainerLifeInsurance {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        background-repeat: no-repeat;
+        background-image: url(../../img/custom/LifeInsurance.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 200px;
+        width: 100%;
+    }
+    #lifeInsuance:hover>.navContainerLifeInsurance::after {
+        content: "";
+        position: absolute;
+        top: 200px;
+        left: 170px;
+        border-width: 15px 15px 0;
+        border-style: solid;
+        border-color: #ffffff transparent;
+        display: block;
+        width: 0;
+    }
+    .navContainerTrustees {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        background-repeat: no-repeat;
+        background-image: url(../../img/custom/Trustees.png);
+        background-position: center;
+        background-size: cover;
+        height: 200px;
+        width: 100%;
+    }
+    #trustees:hover>.navContainerTrustees::after {
+        content: "";
+        position: absolute;
+        top: 200px;
+        left: 170px;
+        border-width: 15px 15px 0;
+        border-style: solid;
+        border-color: #ffffff transparent;
+        display: block;
+        width: 0;
+    }
+    .navContainerPension {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        background-repeat: no-repeat;
+        background-image: url(../../img/custom/Trustees.png);
+        background-position: center;
+        background-size: cover;
+        height: 200px;
+        width: 100%;
+    }
+    #pension:hover>.navContainerPension::after {
+        content: "";
+        position: absolute;
+        top: 200px;
+        left: 170px;
+        border-width: 15px 15px 0;
+        border-style: solid;
+        border-color: #ffffff transparent;
+        display: block;
+        width: 0;
+    }
+    .navLink {
+        margin: 15px 75px;
+        text-decoration: none;
+        font-size: 16px;
+        color: #ffffff !important;
+        display: block;
+        cursor: pointer;
+        z-index: 5;
+    }
+    .moreLink {
+        text-decoration: none;
+        margin: 0px 150px;
+        font-size: 14px;
+        color: yellow !important;
+        display: block;
+        cursor: pointer;
+        z-index: 5;
+    }
+
+    li>a>img {
+    width: 70px!important;
+}
+
+.menuzord-menu > li > a {
+    color: #ffffff !important;
+}
+.section-tiny {
+     padding: 0px 0px !important;
+     height: auto !IMPORTANT;
+}
+
+.stepwizard {
+    display: table;
+    width: 100% !important; 
+    position: relative;
+}
+
+.padform{
+
+    padding-top:15px;
+    padding-left:30px !important;
+    padding-right:30px !important;
+}
+
+}
+
+@media only screen and (min-width: 375px) and (max-width: 411px) {
+    #general:hover>.navContainerGeneral {
+        margin-top: -200px !important;
+        display: block !important;
+        cursor: pointer;
+    }
+    #lifeInsuance:hover>.navContainerLifeInsurance {
+        margin-top: -200px !important;
+        display: block !important;
+        cursor: pointer;
+    }
+    #trustees:hover>.navContainerTrustees {
+        margin-top: -200px !important;
+        display: block !important;
+        cursor: pointer;
+    }
+    #pension:hover>.navContainerPension {
+        margin-top: -200px !important;
+        display: block !important;
+        cursor: pointer;
+    }
+    .navContainerGeneral {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        background-repeat: no-repeat;
+        background-image: url(../../img/custom/General.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 200px;
+        width: 100%;
+    }
+    #general:hover>.navContainerGeneral::after {
+        content: "";
+        position: absolute;
+        top: 200px;
+        left: 145px;
+        border-width: 15px 15px 0;
+        border-style: solid;
+        border-color: #ffffff transparent;
+        display: block;
+        width: 0;
+    }
+    .navContainerLifeInsurance {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        background-repeat: no-repeat;
+        background-image: url(../../img/custom/LifeInsurance.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 200px;
+        width: 100%;
+    }
+    #lifeInsuance:hover>.navContainerLifeInsurance::after {
+        content: "";
+        position: absolute;
+        top: 200px;
+        left: 145px;
+        border-width: 15px 15px 0;
+        border-style: solid;
+        border-color: #ffffff transparent;
+        display: block;
+        width: 0;
+    }
+    .navContainerTrustees {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        background-repeat: no-repeat;
+        background-image: url(../../img/custom/Trustees.png);
+        background-position: center;
+        background-size: cover;
+        height: 200px;
+        width: 100%;
+    }
+    #trustees:hover>.navContainerTrustees::after {
+        content: "";
+        position: absolute;
+        top: 200px;
+        left: 145px;
+        border-width: 15px 15px 0;
+        border-style: solid;
+        border-color: #ffffff transparent;
+        display: block;
+        width: 0;
+    }
+    .navContainerPension {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        background-repeat: no-repeat;
+        background-image: url(../../img/custom/Trustees.png);
+        background-position: center;
+        background-size: cover;
+        height: 200px;
+        width: 100%;
+    }
+    #pension:hover>.navContainerPension::after {
+        content: "";
+        position: absolute;
+        top: 200px;
+        left: 145px;
+        border-width: 15px 15px 0;
+        border-style: solid;
+        border-color: #ffffff transparent;
+        display: block;
+        width: 0;
+    }
+    .navLink {
+        margin: 15px 70px;
+        text-decoration: none;
+        font-size: 16px;
+        color: #ffffff !important;
+        display: block;
+        cursor: pointer;
+        z-index: 5;
+    }
+    .moreLink {
+        text-decoration: none;
+        margin: 0px 135px;
+        font-size: 14px;
+        color: yellow !important;
+        display: block;
+        cursor: pointer;
+        z-index: 5;
+    }
+
+    li>a>img {
+    width: 50px!important;
+}
+
+.menuzord-menu > li > a {
+    color: #ffffff !important;
+}
+
+.section-tiny {
+     padding: 0px 0px !important;
+}
+
+.stepwizard {
+    display: table;
+    width: 100% !important; 
+    position: relative;
+}
+
+.padform{
+
+    padding-top:15px;
+    padding-left:10px !important;
+}
+
+.section-tiny {
+     padding: 0px 0px !important;
+     height: auto !IMPORTANT;
+}
+
+
+}
+
+@media only screen and (min-width: 321px) and (max-width: 374px) {
+    #general:hover>.navContainerGeneral {
+        margin-top: -200px !important;
+        display: block !important;
+        cursor: pointer;
+    }
+
+    .forgal{
+     margin-top: 360px;
+    }
+
+    #lifeInsuance:hover>.navContainerLifeInsurance {
+        margin-top: -200px !important;
+        display: block !important;
+        cursor: pointer;
+    }
+    #trustees:hover>.navContainerTrustees {
+        margin-top: -200px !important;
+        display: block !important;
+        cursor: pointer;
+    }
+    #pension:hover>.navContainerPension {
+        margin-top: -200px !important;
+        display: block !important;
+        cursor: pointer;
+    }
+    .navContainerGeneral {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        background-repeat: no-repeat;
+        background-image: url(../../img/custom/General.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 200px;
+        width: 100%;
+    }
+    #general:hover>.navContainerGeneral::after {
+        content: "";
+        position: absolute;
+        top: 200px;
+        left: 137px;
+        border-width: 15px 15px 0;
+        border-style: solid;
+        border-color: #ffffff transparent;
+        display: block;
+        width: 0;
+    }
+    .navContainerLifeInsurance {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        background-repeat: no-repeat;
+        background-image: url(../../img/custom/LifeInsurance.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 200px;
+        width: 100%;
+    }
+    #lifeInsuance:hover>.navContainerLifeInsurance::after {
+        content: "";
+        position: absolute;
+        top: 200px;
+        left: 137px;
+        border-width: 15px 15px 0;
+        border-style: solid;
+        border-color: #ffffff transparent;
+        display: block;
+        width: 0;
+    }
+    .navContainerTrustees {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        background-repeat: no-repeat;
+        background-image: url(../../img/custom/Trustees.png);
+        background-position: center;
+        background-size: cover;
+        height: 200px;
+        width: 100%;
+    }
+    #trustees:hover>.navContainerTrustees::after {
+        content: "";
+        position: absolute;
+        top: 200px;
+        left: 137px;
+        border-width: 15px 15px 0;
+        border-style: solid;
+        border-color: #ffffff transparent;
+        display: block;
+        width: 0;
+    }
+    .navContainerPension {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        background-repeat: no-repeat;
+        background-image: url(../../img/custom/Trustees.png);
+        background-position: center;
+        background-size: cover;
+        height: 200px;
+        width: 100%;
+    }
+    #pension:hover>.navContainerPension::after {
+        content: "";
+        position: absolute;
+        top: 200px;
+        left: 137px;
+        border-width: 15px 15px 0;
+        border-style: solid;
+        border-color: #ffffff transparent;
+        display: block;
+        width: 0;
+    }
+    .navLink {
+        margin: 15px 50px;
+        text-decoration: none;
+        font-size: 16px;
+        color: #ffffff !important;
+        display: block;
+        cursor: pointer;
+        z-index: 5;
+    }
+    .moreLink {
+        text-decoration: none;
+        margin: 0px 120px;
+        font-size: 14px;
+        color: yellow !important;
+        display: block;
+        cursor: pointer;
+        z-index: 5;
+    }
+    li>img {
+    width: 50px!important;
+}
+
+.menuzord-menu > li > a {
+    color: #ffffff !important;
+}
+
+.section-tiny {
+     padding: 0px 0px !important;
+}
+
+.stepwizard {
+    display: table;
+    width: 100% !important; 
+    position: relative;
+}
+
+.padform{
+
+    padding-top:15px;
+    padding-left:10px !important;
+}
+
+
+}
+
+@media only screen and (max-width: 320px) {
+    #general:hover>.navContainerGeneral {
+        margin-top: -200px !important;
+        display: block !important;
+        cursor: pointer;
+    }
+    .c-breadcrumb-1 {
+        display: block !important;
+        width: max-content;
+    }
+
+    /*.forgal{
+     margin-top: 400px;
+    }*/
+
+    #lifeInsuance:hover>.navContainerLifeInsurance {
+        margin-top: -200px !important;
+        display: block !important;
+        cursor: pointer;
+    }
+    #trustees:hover>.navContainerTrustees {
+        margin-top: -200px !important;
+        display: block !important;
+        cursor: pointer;
+    }
+    #pension:hover>.navContainerPension {
+        margin-top: -200px !important;
+        display: block !important;
+        cursor: pointer;
+    }
+    .navContainerGeneral {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        background-repeat: no-repeat;
+        background-image: url(../../img/custom/General.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 200px;
+        width: auto;
+    }
+    #general:hover>.navContainerGeneral::after {
+        content: "";
+        position: absolute;
+        top: 200px;
+        left: 120px;
+        border-width: 15px 15px 0;
+        border-style: solid;
+        border-color: #ffffff transparent;
+        display: block;
+        width: 0;
+    }
+    .navContainerLifeInsurance {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        background-repeat: no-repeat;
+        background-image: url(../../img/custom/LifeInsurance.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 200px;
+        width: 290px;
+    }
+    #lifeInsuance:hover>.navContainerLifeInsurance::after {
+        content: "";
+        position: absolute;
+        top: 200px;
+        left: 120px;
+        border-width: 15px 15px 0;
+        border-style: solid;
+        border-color: #ffffff transparent;
+        display: block;
+        width: 0;
+    }
+    .navContainerTrustees {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        background-repeat: no-repeat;
+        background-image: url(../../img/custom/Trustees.png);
+        background-position: center;
+        background-size: cover;
+        height: 200px;
+        width: auto;
+    }
+    #trustees:hover>.navContainerTrustees::after {
+        content: "";
+        position: absolute;
+        top: 200px;
+        left: 120px;
+        border-width: 15px 15px 0;
+        border-style: solid;
+        border-color: #ffffff transparent;
+        display: block;
+        width: 0;
+    }
+    .navContainerPension {
+        position: absolute;
+        z-index: 1;
+        display: block;
+        background-repeat: no-repeat;
+        background-image: url(../../img/custom/Trustees.png);
+        background-position: center;
+        background-size: cover;
+        height: 200px;
+        width: auto;
+    }
+    #pension:hover>.navContainerPension::after {
+        content: "";
+        position: absolute;
+        top: 200px;
+        left: 120px;
+        border-width: 15px 15px 0;
+        border-style: solid;
+        border-color: #ffffff transparent;
+        display: block;
+        width: 0;
+    }
+    .navLink {
+        margin: 15px 35px;
+        text-decoration: none;
+        font-size: 16px;
+        color: #ffffff !important;
+        display: block;
+        cursor: pointer;
+        z-index: 5;
+    }
+    .moreLink {
+        text-decoration: none;
+        margin: 0px 110px;
+        font-size: 14px;
+        color: yellow !important;
+        display: block;
+        cursor: pointer;
+        z-index: 5;
+    }
+
+   li > a > img {
+    width: 50px!important;
+}
+
+.menuzord-menu > li > a {
+    color: #ffffff !important;
+}
+.section-tiny {
+     padding: 0px 0px !important;
+}
+
+header #sticky-wrapper{
+    height:10px;
+}
+
+.stepwizard {
+    display: table;
+    width: 100% !important; 
+    position: relative;
+}
+
+.padform{
+
+    padding-top:15px;
+    padding-left:10px !important;
+}
+.section-tiny {
+     height: auto !IMPORTANT;
+}
+
+}
+
+
+
+
+
+
+
+
+.padform{
+
+    padding-top:15px;
+    padding-left:100px;
+}
+
+
+
+.hov-radius{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.menuzord .showhide em {
+    float: right;
+    width: 20px;
+    height: 3px;
+    margin: 3.5px 0 0;
+    background: #fffefe;
+}
+
+/*date picker section css*/
+
+/*progress bar disable function*/
+
+ a.disable {
+   pointer-events: none;
+   cursor: default;
+ }
+
+
+
+@media only screen and (min-width: 1000px) and (max-width: 1024px) {
+    .logo-brand {
+        margin-right: 0px !important;
+    }
+    .section-tiny {
+     height: auto !IMPORTANT;
+}
+}

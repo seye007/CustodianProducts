@@ -1,0 +1,473 @@
+﻿@model SafetyPlusVm
+@{
+  Layout = "_SafetyPlusPlan";
+}
+
+
+<section class="section-primary" style="background-color:#ffffff;">
+  <div class="container-fluid padform"> 
+    <div class="stepwizard col-md-7 formtop-width" >
+      <div class="stepwizard-row setup-panel">
+        <div class="stepwizard-step">
+          <a class="btn btn-primary disable btn-circle stepwizard-1" href="#step-1" type="button">1</a>
+          <p>Personal Information</p>
+        </div>
+        <div class="stepwizard-step">
+          <a  class="btn btn-default disable btn-circle stepwizard-2" href="#step-2" type="button" disabled>2</a>
+          <p>Beneficiary Details</p>
+        </div>
+        <div class="stepwizard-step">
+          <a class="btn btn-default disable btn-circle stepwizard-3" href="#step-3" type="button">3</a>
+          <p>Quote Summary</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-7 form-sha" style="">
+        <form
+          id="personal-accident-form"
+          role="form"
+          asp-action="Index"
+          enctype="multipart/form-data"
+          method="post"
+          asp-antiforgery="true"
+        >
+         @* <input type="hidden" name="quote_code" id="quote_code" value="">*@
+<input type="hidden" id="premium" name="premium" value="0">
+@*<input type="hidden" id="product_name" name="product_name" value="SafetyPlus">*@
+          <div class="row setup-content" id="step-1">
+            <div class="col-md-12">
+  <h3 class="text-center fontn">Personal Information</h3>
+ 
+   @await Html.PartialAsync("_PersonalInformation",@Model)
+
+  <button
+    class="btn btn-primary btn-class pull-right"
+   @* id="personal-accident-next-first"*@
+      id="product_first_step"
+    type="button"
+  >
+    Next
+  </button>
+</div>          </div>
+<!--Step 2-->
+          <div class="row setup-content" id="step-2">
+            <div class="col-md-12">
+  <h3 class="text-center fontn">Beneficiary Details</h3>
+  <div class="smart-forms">
+    <div class="frm-row">
+
+      <div class="colm colm6">
+        <div class="section">
+          <label for="fullname" class="field-label">Insurance start date</label>
+          <label class="field">
+            
+				<input
+					type="text"
+					name="startdate"
+          asp-for="StartDate"
+					id="start_date"
+					class="gui-input datepicker-here"
+					data-language="en"
+					data-date-format="yyyy-mm-dd"
+					readonly="true"
+					value=""
+					placeholder="yyyy-mm-dd"
+				>
+          </label>
+        </div>
+      </div>
+
+      <div class="colm colm6">
+        <div class="section">
+          <label for="state" class="field-label">Policy Period</label>
+          <label class="field select">
+            <select name="policyperiod" asp-for="PolicyPeriod" id="policy_period">
+              <option value="Annually">Annually</option> 
+            </select>
+            <i class="arrow double"></i>                    
+          </label>
+        </div>
+      </div>
+
+      <div class="colm colm6">
+        <div class="section">
+          <label for="state" class="field-label">Number of Units </label>
+          <label class="field select">
+            <select name="units" id="units" asp-for="Units">
+              <option value=""><i>Select...</i></option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+            </select>
+            <i class="arrow double"></i>                    
+          </label>
+        </div>
+      </div>
+
+      <div class="colm colm6">
+        <div class="section">
+          <div class="section">
+            <label for="budget" class="field-label">Premium</label>
+            <label class="field">
+              <input
+                type="text"
+                id="showcase-premium"
+                class="gui-input"
+                asp-for="Premium"
+                readonly
+                placeholder="NGN 0.0"
+                style="font-weight: 1000; background-color: #a50505; color: #ffffff; font-size: 18px;"
+              >
+              </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="colm colm6">
+        <div class="section">
+          <label for="budget" class="field-label">Identification Type</label>
+            <label class="field select">
+              <select id="identification_type" asp-for="BeneficiaryIdentificationType">
+                <option value="">choose ID</option>
+                <option value="Voter-card">Voters card</option>
+                <option value="Drivers-license">Driver's license</option>
+                <option value="International-passport">International passport</option>
+                <option value="National-ID">National ID</option>
+              </select>
+              <i class="arrow double"></i>                    
+            </label>  
+        </div>
+      </div>
+
+      <div class="colm colm6">
+        <div class="section">
+          <label for="identification_number" class="field-label">Identification No</label>
+          <label class="field">
+            <input
+              type="text"
+              asp-for="BeneficiaryIdentificationNumber"
+              id="identification_number"
+              value=""
+              class="gui-input"
+              placeholder="Enter ID No"
+            >
+          </label>
+        </div>
+      </div>
+
+      <div class="colm colm6">
+        <div class="section">
+          <label for="fullname" class="field-label">Company Name</label>
+          <label class="field">
+            <input
+              type="text"
+              name="companyname"
+              asp-for="CompanyName"
+              id="company_name"
+              value=""
+              class="gui-input"
+              placeholder="Enter Company name"
+            >
+          </label>
+        </div>
+      </div>
+
+      <div class="colm colm6">
+        <div class="section">
+          <label for="company_address" class="field-label">Company Address </label>
+          <label class="field">
+            <input
+              type="text"
+              asp-for="CompanyAddress"
+              name="companyaddress"
+              id="company_address"
+              value=""
+              class="gui-input"
+              placeholder="Enter address"
+            >
+          </label>
+        </div>
+      </div>
+
+      <div class="colm colm6">
+        <div class="section">
+          <label for="firstname" class="field-label">Beneficiary Name</label>
+          <label class="field">
+            <input
+              type="text"
+              asp-for="BeneficiaryName"
+              id="beneficiary_name"
+              value=""
+              class="gui-input"
+              placeholder="Enter Beneficiary Name"
+            >
+          </label>
+        </div>
+      </div>
+
+      <div class="colm colm6">
+        <div class="section">
+          <label for="date" class="field-label">Beneficiary Date of Birth</label>
+          <label class="field">
+            
+				<input
+					type="text"
+					id="beneficiary_dob"
+          asp-for="BeneficiaryDateOfBirth"
+					class="gui-input datepicker-here"
+					data-language="en"
+					data-date-format="yyyy-mm-dd"
+					data-min-view="days"
+					data-view="years"
+					readonly="true"
+					value=""
+					placeholder="yyyy-mm-dd"
+				>
+          </label>
+        </div>
+      </div> 
+
+      <div class="colm colm6">
+        <div class="section">
+          <label for="gender" class="field-label">Beneficiary Gender</label>
+          <label class="field select">
+            <select id="beneficiary_gender" name="beneficiarygender" asp-for="BeneficiaryGender">
+              <option value="">Select...</option>
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+            </select>
+            <i class="arrow double"></i>                    
+          </label>  
+        </div>
+      </div>
+
+      <div class="colm colm6">
+        <div class="section">
+          <label for="firstname" class="field-label">Beneficiary Relationship</label>
+          <label class="field">
+            <input
+              type="text"
+              id="beneficiary_relationship"
+              asp-for="BeneficairyRelationship"
+              value=""
+              class="gui-input"
+              placeholder="Enter Beneficiary Relationship"
+            >
+          </label>
+        </div>
+      </div>
+
+      <div class="section">
+        <label for="file1" class="field-label"> 
+          Upload means of Identification - 
+          <span class="small-text fine-grey">(ONLY JPG : PNG : PDF - MAXIMUM FILESIZE: 500KB)</span> 
+        </label>
+
+        <label class="field prepend-icon file">
+          <span class="button btn-primary">Choose File</span>
+          <input
+            asp-for="IdentificationImage"
+            class="gui-file"
+            id="identification_image_file"
+			
+			onchange="validateFile(this, '#identification_image_text', 512000)"
+            type="file"
+          >
+          <input
+            class="gui-input"
+            id="identification_image_text"
+            placeholder="no file selected"
+            readonly
+            type="text"
+          >
+          <span class="field-icon"><i class="fa fa-upload"></i></span>
+        </label>
+      </div>
+
+    </div>
+  </div>
+
+  <button
+    class="btn btn-primary prevBtn btn-class pull-left"
+    type="button"
+    id="product_second_step_prev"
+  >
+    Previous
+  </button>
+
+  <button
+    class="btn btn-primary btn-class pull-right"
+   @* id="personal-accident-next-second"*@
+   id="product_second_step"
+    type="button"
+  >
+    Next
+  </button>
+</div>          </div>
+<!-- Step 3 :  -->
+									<div class="row setup-content pady no-show" id="step-3">
+										<div class="col-md-12" style="margin-top: 10px;">
+											<div class="col-md-12">
+												<section class="section-primary pt-none">
+													<div class="container">
+														<div class="row">
+															<!-- <div class="col-md-12" style="padding-top: 30px;"></div> -->
+															<div class="col-md-12 mt-5" style="margin-top:40px;">
+																<table class="table table-bordered">
+																	<thead>
+																		<tr>
+																			<th style="font-size: 16px;">
+																				Quotation Detail
+																			</th>
+																			<th style="font-size: 16px;">
+
+																			</th>
+																		</tr>
+																	</thead>
+
+																	<tbody>
+
+																		<tr>
+																			<td><strong>Client Name: </strong></td>
+																			<td><span id="pre_client_name"></span></td>
+																		</tr>
+																		<tr>
+																			<td><strong>Product Name: </strong></td>
+																			<td><span id="product_name"></span></td>
+																		</tr>
+																		<tr>
+																			<td><strong>Company Name: </strong></td>
+																			<td><span id="summary_company_name"></span></td>
+																		</tr>
+																		<tr>
+																			<td><strong>Payments Frequency: </strong></td>
+																			<td> <span id="pre_payment_option"></span></td>
+																		</tr>
+																		<tr>
+																			<td><strong>Start Date: </strong></td>
+																			<td> <span id="pre_insurance_start_date"></span> </td>
+																		</tr>
+																		<tr>
+																			<td><strong>Beneficiary Name </strong></td>
+																			<td><span id="summary_beneficiary_name"></span></td>
+																		</tr>
+																		<tr>
+																			<td><strong>Premium Amount </strong></td>
+																			<td><span id="pre_sum_assured"></span></td>
+																		</tr>
+
+																		<table>
+																			<tr>
+																				<td>
+																					<p style="text-align: center;">
+																						If you have questions about the status of your quotation, please contact:
+																						carecentre@custodianinsurance.com
+																					</p>
+																				</td>
+																			</tr>
+																		</table>
+
+																	</tbody>
+																</table>
+
+																<div id="comprehensive-download-button" class="text-right">
+																	<a class="btn standard grey btn-icon-reveal"
+																		 href="javascript:;"
+																		 onclick="downloadQuote();">
+																		<i class="fa fa-download"></i>
+																		<span class="text">Download Quote</span>
+																	</a>
+																</div>
+
+																<nav id="tp-and-ft-buttonset"
+																		 class="c-breadcrumb-1 c-breadcrumb-1-onCheckout -style-icons pull-right">
+																	<ol class="c-breadcrumb-1-inner">
+																		<li class="c-breadcrumb-1-item">
+																			<a href="javascript:;"
+																				 onclick="downloadQuote();"
+																				 class="
+
+
+
+">
+																				<i class="c-breadcrumb-1-icon fa fa-download" aria-hidden="true"></i>
+																				Download Quote
+																			</a>
+																		</li>
+
+																		<li class="c-breadcrumb-1-item">
+																			<a href="javascript:;"
+																				 onclick="sendQuote();"
+																				 class="c-breadcrumb-1-link">
+																				<i class="c-breadcrumb-1-icon fa fa-envelope" aria-hidden="true"></i>
+																				Email Quote
+																			</a>
+																		</li>
+																	</ol>
+																</nav>
+
+															</div>
+														</div>
+													</div>
+												</section>
+
+												<div class="col-md-12 pady" style="margin-bottom: 15px">
+													<div class="row">
+														<div class="col-6">
+															<button class="btn btn-primary btn-class prevBtn pull-left" id="product_third_step_prev" type="button">Previous</button>
+														</div>
+														<div class="col-6">
+
+															<span id="base-email-quote-container">
+																<a class="btn standard color1 btn-icon-reveal pull-right"
+																	 href="javascript:;"
+																	 onclick="sendQuote();">
+																	<i class="fa fa-envelope"></i>
+																	<span style="color:white;" class="text">Submit Request Quote</span>
+																</a>
+															</span>
+
+															<button style="color: #fff;"
+																			id="buy-now-button"
+																			class="btn btn-success btn-class pull-right color1"
+																			type="submit">
+																Buy Now!
+															</button>
+
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+</form>
+        
+      </div>
+      <div class="col-md-5">
+        <div class="info">
+  <h3 style="color: #ffffff;">Custodian Safety Plus Plan</h3>
+  <hr>
+  <div style="text-align: justify">
+          
+	<p>
+		Accidents do happen; when they do the victims are less burdened when they do not have to worry about the medical expenses that come as a result of such. 
+		<br /><br />Custodian Safety Plus Plan is a Personal Accident Insurance policy that provides financial assistance to the Insured in the event of an accident. The policy covers death, permanent disablement and medical expenses as a result of an accident.
+	</p>
+
+	<p>
+		FEATURES
+	</p>
+
+	<ul>
+		<li>Annually renewable policy</li>
+		<li>Premium per unit is N1,000.00</li>
+		<li>Minimum unit of one and maximum of five</li>
+		<li>Permanent disability benefit per unit is N400,000.00</li>
+		<li>Death benefit per unit is N200,000.00</li>
+		<li>Limit of Medical expenses is N30,000</li>			
+	</ul>
+  </div>
+</div>      </div>
+    </div>
+  </div>
+</section>
